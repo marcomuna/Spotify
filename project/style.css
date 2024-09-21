@@ -1,0 +1,489 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  color: white;
+  overflow: hidden;
+}
+.container {
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(12, 1fr);
+}
+
+a {
+  text-decoration: none;
+}
+/* Designing nav bar. ----------------------------------------------------*/
+.nav {
+  grid-column: 1/6;
+  grid-row: 1/2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  padding: 0 1rem;
+  height: 60px;
+}
+
+.search {
+  display: flex;
+  background-color: black;
+  border-radius: 1rem;
+  padding: 0.5rem;
+}
+.home {
+  display: flex;
+  background-color: #1f1f1f;
+  height: 3rem;
+  width: 3rem;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.searchbar {
+  display: flex;
+  align-items: center;
+  margin-left: 0.6rem;
+  border-radius: 2rem;
+  background-color: #1f1f1f;
+  padding: 0.5rem 0.7rem;
+}
+.search-btn {
+  margin: 0;
+  border: none;
+}
+.search-icon {
+  margin-right: 10px;
+}
+#search {
+  margin: 0;
+  border: none;
+  color: white;
+  font-size: 1.1rem;
+  font-weight: 500;
+  background-color: transparent;
+  border: none;
+  width: 20vw;
+}
+#search:active {
+  border: none;
+}
+.search-img {
+  border-radius: 50%;
+}
+
+.tools {
+  display: flex;
+  align-items: center;
+  width: 24vw;
+  display: flex;
+  justify-content: space-around;
+}
+.btn {
+  width: 9rem;
+  border-radius: 20px;
+  border: none;
+  height: 2rem;
+  font-size: 0.8rem;
+  font-weight: bolder;
+}
+.premium {
+  background-color: white;
+}
+.install {
+  background-color: black;
+  color: white;
+  width: 7rem;
+}
+.install-icon {
+  margin-right: 5px;
+}
+.bell {
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  margin: 0 5px 0 10px;
+}
+.mlogo {
+  background-color: plum;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 10px solid #202020;
+  color: purple;
+}
+
+/* Designing hero bar. ----------------------------------------------------*/
+
+.heros {
+  background-color: #121212;
+  grid-row: 2/12;
+  border-radius: 7px;
+  padding: 0.5rem;
+  margin: 0 0.25em;
+}
+.leftSidebar {
+  grid-column: 1/2;
+}
+
+.leftS {
+  background-color: #1f1f1f;
+  height: 8rem;
+  width: 16rem;
+  margin: 0.5rem 0 1.5rem 0;
+  border-radius: 0.5rem;
+}
+
+.leftLibrary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #121212;
+  height: 3rem;
+  opacity: 0.7;
+}
+.libraryTag {
+  margin: 0.5em;
+  display: flex;
+  align-items: center;
+  width: 9rem;
+  justify-content: space-around;
+}
+
+.libraryIcon {
+  width: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.licon {
+  font-size: 1rem;
+}
+.leftCard {
+  line-height: 0.5rem;
+  padding: 0.6rem 1rem;
+}
+.leftCard p {
+  font-size: 0.8rem;
+}
+.leftCard h4 {
+  font-size: 0.85rem;
+}
+.createPlaylist {
+  background-color: white;
+  border-radius: 1.5rem;
+  padding: 0.55rem 1rem;
+  font-size: 0.9rem;
+  font-weight: bold;
+  border: none;
+  margin-top: 1rem;
+}
+.rightSidebar {
+  display: flex;
+  padding: 1.5rem 1rem;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden auto;
+}
+.rightheading {
+  width: 18rem;
+  display: flex;
+  justify-content: space-between;
+}
+.righticon {
+  display: flex;
+  width: 4rem;
+  justify-content: space-around;
+  opacity: 0.7;
+}
+
+.rightcard img {
+  margin-top: 1.5rem;
+  width: 16rem;
+  height: 16rem;
+  border-radius: 0.5rem;
+}
+.righttag {
+  display: flex;
+}
+.rightinfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 20rem;
+  height: 5rem;
+  line-height: 1px;
+}
+.rHeading {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-left: 1rem;
+}
+.tuba {
+  font-size: 1.5rem;
+  margin-left: 2.5rem;
+}
+
+.Muna {
+  margin-left: 2.5rem;
+}
+.main {
+  grid-column: 2/5;
+  overflow: hidden auto;
+  scrollbar-width: thin;
+  scrollbar-color: grey black;
+  padding: 0;
+}
+.rightSidebar {
+  grid-column: 5/6;
+  overflow: hidden auto;
+  scrollbar-width: thin;
+  scrollbar-color: grey black;
+  padding: 1rem;
+}
+
+/* main navigation bar---------------------------- */
+.mainnav {
+  display: flex;
+  position: sticky;
+  top: 0;
+  background-color: #121212;
+  padding: 0.8rem 1rem;
+}
+.navbtn {
+  margin-right: 0.5rem;
+  border-radius: 2rem;
+  padding: 0.6rem 0.9rem;
+  border: none;
+  background-color: #1f1f1f;
+  color: white;
+  font-weight: bold;
+}
+
+.mainalbum h2 {
+  margin: 2rem 1rem 1.5rem 1rem;
+}
+.cardcontainer {
+  display: flex;
+}
+.maincard {
+  width: 12rem;
+  height: 16rem;
+  margin: 0 1rem;
+  border-radius: 0.5rem;
+  text-align: center;
+}
+.maincard img {
+  border-radius: 0.5rem;
+  width: 11rem;
+  height: 12rem;
+}
+.maincard p {
+  color: rgb(150, 150, 150);
+  width: 11rem;
+  font-size: 0.9rem;
+  text-align: start;
+}
+
+/* footer--------------------------------------- */
+.footer {
+  margin-top: 5rem;
+  height: 20rem;
+}
+
+.footercontainer {
+  padding: 0.5rem;
+  height: 15rem;
+  display: flex;
+  justify-content: space-between;
+}
+.bold {
+  font-weight: bold;
+}
+a {
+  text-decoration: none;
+  color: grey;
+  font-size: 1rem;
+}
+ul li {
+  margin: 0.5rem 0;
+  list-style-type: none;
+}
+.fifth {
+  display: flex;
+  justify-content: space-between;
+  width: 7rem;
+}
+.insta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #202020;
+  height: 2rem;
+  width: 2rem;
+  border-radius: 50%;
+}
+.fifth a {
+  margin: 0.25rem;
+  color: white;
+}
+
+.footerpolycy {
+  height: 7rem;
+  /* background-color: blue; */
+  border-top: 1px solid #1f1f1f;
+  border-width: 10%;
+}
+
+.policy {
+  padding: 2rem 0.5rem 4rem 0.5rem;
+  display: flex;
+  justify-content: space-around;
+}
+.copy {
+  margin-left: 5rem;
+  color: grey;
+}
+.policy a {
+  font-size: 0.9rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Designing player pattern  --------------------------------------------- */
+
+.main::-webkit-scrollbar {
+  width: 5px; /* Set the width of the scrollbar  */
+}
+.main::-webkit-scrollbar-track {
+  background-color: #d4aa70; /* Color of the scrollbar track  */
+  border-radius: 10px; /* Rounded corners for the track  */
+}
+.main::-webkit-scrollbar-thumb {
+  background-color: #d4aa70; /* Color of the scrollbar handle  */
+  border-radius: 100px; /* Rounded corners for the handle  */
+}
+.rightSidebar::-webkit-scrollbar {
+  width: 5px; /* Set the width of the scrollbar  */
+}
+.rightSidebar::-webkit-scrollbar-track {
+  background-color: #d4aa70; /* Color of the scrollbar track  */
+  border-radius: 10px; /* Rounded corners for the track  */
+}
+.rightSidebar::-webkit-scrollbar-thumb {
+  background-color: #d4aa70; /* Color of the scrollbar handle  */
+  border-radius: 100px;
+}
+
+
+
+.player {
+  height: 4rem;
+  display: flex;
+  background-color: black;
+  grid-column: 1/9;
+  grid-row: 12/13;
+  /* bottom: 0; */
+  /* justify-content: space-between; */
+  align-items: center;
+  padding: 0.5rem 1rem;
+}
+
+.album {
+  width: 25%;
+  height: 3.5rem;
+  display: flex;
+  align-items: center;
+  /* background-color: palegoldenrod; */
+  margin: 0.2rem;
+}
+.album > img{
+  height: 3.5rem;
+  border-radius: 0.5rem;
+  margin-right: 1rem;
+}
+
+.title p{
+  padding: 0;
+  margin: 0;
+  font-size: 0.7rem;
+}
+.title h5{
+  padding: 0;
+  margin: 0;
+}
+
+/* controll panel design ==================================== */
+.control{
+  width: 50%;
+  margin-left: 2rem;
+}
+
+.pause{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pause a img{
+  height: 1rem;
+  width: 1rem;
+  margin: 0 0.5rem;
+  opacity: 0.7;
+}
+
+
+.track{
+  display: flex;
+  justify-content: center;
+}
+#track-line{
+  margin: 0 0.5rem;
+}
+
+
+.toolbar {
+  display: flex;
+  justify-content: flex-end;
+  width: 25%;
+}
+.toolbar img{
+  height: 1.5rem;
+  width: 1.5rem;
+  margin: 0 0.2rem;
+}
+
+
+.volume{
+  height: 4px;
+  align-self: center;
+  max-width: 100;
+  /* appearance: none; */
+  background-color: grey;
+  /* accent-color: transparent; */
+  border-radius: 5px;
+  cursor: pointer;
+}
